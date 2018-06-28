@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+    <link rel="shortcut icon" href="../images/epcc_logo.png"/>
+    <link rel="stylesheet" type="text/css" href="../styles/codeTalk.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+<h1 style="color: lawngreen">Record Object</h1>
+<blockquote>
+    <pre class="prettyprint">
+        <code class="language-python">
+import hashlib,os
+
+class Record(object):
+
+    def __init__(self,name,address,city,zip_code,web,program_name):
+        self.name=name
+        self.address=address
+        self.city=city
+        self.zip_code=zip_code
+        self.web=web
+        self.program_name=program_name
+
+    def UUID(self,num=31):
+        salt=os.urandom(num).hex()
+        e=str(salt+self.name).encode("UTF")
+        return hashlib.sha512(e).hexdigest()
+
+    def __repr__(self):
+        s="""
+        UUID: {id}
+        Name: {name}
+        Address: {address}
+        City: {city}
+        Zip Code: {zipCode}
+        Web: {web}
+        Program Name: {pr_name}
+        """.format(id=self.UUID(),
+                   name=self.name,
+                   address=self.address,
+                   city=self.city,
+                   zipCode=self.zip_code,
+                   web=self.web,
+                   pr_name=self.program_name)
+        return s
+
+
+        </code>
+    </pre>
+</blockquote>
+</body>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</html>
