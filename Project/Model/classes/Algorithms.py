@@ -1,5 +1,6 @@
 from numpy.linalg import norm as euclidean
 from numpy import array as array
+import time
 
 class Algorithms(object):
 
@@ -7,6 +8,7 @@ class Algorithms(object):
         pass
 
     def euclideanDistance(self,a):
+        start=time.time()
         c=[]
         res=[]
         z=0
@@ -18,6 +20,7 @@ class Algorithms(object):
             c.append(tuple( [ a[z],analysis[res.index(min(res))]]))
             res.clear()
             z+=1
+        print("--- {} CPU Seconds Elapsed ---".format(time.time()-start))   
         return c
     
     def find(self,target,arr):
