@@ -8,6 +8,9 @@ class Algorithms(object):
         pass
 
     def euclideanDistance(self,a):
+        
+        """Make a map of the shortest distance between points in a Set"""
+        
         start=time.time()
         c=[]
         res=[]
