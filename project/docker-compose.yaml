@@ -1,0 +1,56 @@
+version: "3.3"
+
+services:
+
+  mongodb:
+    image: mongo:demo
+    container_name: "restful-db"
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./model/schema
+      labels:
+        - "guru.aguilar.description=Custom database image for this project"
+        - "guru.aguilar.department=IT"
+        - "guru.aguilar.detail=Cached Database"  
+    volumes:
+      - EuclideanDistance:/data/db:cached
+    ports:
+      - "27017:27017"
+
+  flask-restful:
+    image: flask:demo
+    container_name: "flask-restful-api"
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./web/
+      labels:
+        - "guru.aguilar.description=REST-api to distrubute and view datasets"
+        - "guru.aguilar.department=developers"
+        - "guru.aguilar.detail=using flask related packages with allowed cross-origin requests"  
+    depends_on:
+      - mongodb     
+    links:
+      - mongodb
+    ports:
+      - "5000:5000"
+
+  react-frontend:
+    image: react:demo
+    container_name: "react-app"
+    restart: always 
+    build:
+      dockerfile: Dockerfile
+      context: ./client/
+      labels:
+        - "guru.aguilar.description=Frontend for backend"
+        - "guru.aguilar.department=developer"
+        - "guru.aguilar.detail=using react as the front-end"        
+    links:
+      - flask-restful            
+    ports:
+      - "3000:3000"
+
+volumes:
+  EuclideanDistance:
