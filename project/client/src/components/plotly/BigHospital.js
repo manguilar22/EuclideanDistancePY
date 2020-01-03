@@ -19,7 +19,7 @@ export default class BigHospital extends Component {
     componentDidMount() {
         axios.get("/hospital")
             .then(res => {
-                let {hospitals} = res.data;
+                let hospitals = res.data;
                 this.setState({locations: hospitals, loaded: 1});
             })
             .catch(err => this.setState({loaded: 0}))

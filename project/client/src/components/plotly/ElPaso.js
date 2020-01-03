@@ -14,7 +14,7 @@ export default class ElPaso extends Component {
         axios.get("/home")
             .then(res => {
                 const {locations,loaded} = this.state;
-                this.setState({locations:res.data.home,loaded:1});
+                this.setState({locations:res.data,loaded:1});
             })
             .catch(err => console.log("Failed Fetch /locations"))
     }

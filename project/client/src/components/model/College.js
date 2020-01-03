@@ -12,11 +12,10 @@ export default class College extends Component {
          */
         axios.get("/college")
             .then(res => {
-                const {college} = res.data;
+                const college = res.data;
                 this.setState({college:college,loaded:1});
              })
             .catch(err => console.log("No Data"));
-
     }
 
     render(){
