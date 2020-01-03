@@ -12,7 +12,6 @@ end_lon
 end_name
  */
 
-
 type HomeHospitals []Home
 
 type Home struct {

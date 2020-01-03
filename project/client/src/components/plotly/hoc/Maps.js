@@ -7,14 +7,14 @@ export default class Maps extends Component {
 
     makeRandomNum = () => {
         const {value} = this.props;
-      let set = new Set();
-      let limit = 1000;
-      while(set.size !== limit) {
+        let set = new Set();
+        let limit = 1000;
+        while(set.size !== limit) {
           let item = Math.round(Math.random()*value.length) - 1;
           set.add(item);
           console.log("STUCK!")
-      }
-      this.setState({index:[...set]});
+        }
+        this.setState({index:[...set]});
     };
 
     render(){

@@ -3,7 +3,9 @@ package logic
 import (
 	"encoding/json"
 	"github.com/manguilar22/EuclideanDistancePY/project/rest/domain"
+	"github.com/manguilar22/EuclideanDistancePY/project/rest/mongo"
 	"io/ioutil"
+	"log"
 )
 
 // Load files to REST
@@ -14,7 +16,7 @@ func GetCollege() (data domain.Colleges) {
 		return
 	}
 
-	data = domain.Colleges{};
+	data = domain.Colleges{}
 
 	_ = json.Unmarshal([]byte(file),&data)
 
@@ -30,7 +32,6 @@ func GetHomeHospitals() (rest string) {
 
 	_ = json.Unmarshal([]byte(file),&data)
 
-	//p,_ := json.Marshal(data)
 	rest = string([]byte(file))
 	return
 
@@ -47,4 +48,21 @@ func GetBigHospitalData() (rest string) {
 }
 
 
-
+func LoadFilesToDatabase() (test string){
+	// test = did it work? yes or no ?
+	client,ctx := mongo.InitializeMongoClient()
+	db := client.Database(mongo.DBNAME)
+	coll := db.Collection(mongo.DBCOLL)
+	p,_ := ioutil.ReadFile("./data/Colleges.json")
+	rest := []byte(p)
+	data := domain.Colleges{}
+	_ = json.Unmarshal(rest,&data)
+	coll.InsertOne(ctx,"")
+	for _,element := range data{
+		_,err := coll.InsertOne(ctx,element)
+		if err != nil {
+			log.Fatalln("Could not insert document:",element)
+		}
+	}
+	return "works"
+}

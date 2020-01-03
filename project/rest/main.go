@@ -9,7 +9,7 @@ import (
 )
 
 func main () {
-
+	logic.LoadFilesToDatabase()
 
 	router := mux.NewRouter()
 
