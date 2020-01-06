@@ -10,6 +10,8 @@ end_lon
 end_lat
 */
 
+type WorldHostpital []Hospital
+
 type Hospital struct {
 
 	Name string	`json:"name" bson:"name"`
@@ -20,3 +22,4 @@ type Hospital struct {
 	EndLat float64 `json:"end_lat" bson:"end_lat"`
 
 }
+
