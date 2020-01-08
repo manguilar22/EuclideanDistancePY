@@ -4,50 +4,42 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/manguilar22/EuclideanDistancePY/project/rest/controller"
-	"github.com/manguilar22/EuclideanDistancePY/project/rest/logic"
+	"github.com/manguilar22/EuclideanDistancePY/project/rest/domain"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main () {
 
+
 	router := mux.NewRouter()
+
+
+	// WEB
+	router.HandleFunc("/public",controller.CollegePageTest)
+
 
 	router.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		fmt.Fprintln(writer,"Works")
 	}).Methods(http.MethodGet)
 
-	router.HandleFunc("/public",controller.MyLoadingDataHandle).Methods(http.MethodGet)
-	router.HandleFunc("/public/home",controller.MyLoadingHomeHospital).Methods(http.MethodGet)
-	router.HandleFunc("/public/hospital",controller.MyLoadingWorldHospital).Methods(http.MethodGet)
+	router.HandleFunc("/college",domain.College{}.ServeData).Methods(http.MethodGet)
+	router.HandleFunc("/home",domain.Home{}.ServeData).Methods(http.MethodGet)
+	router.HandleFunc("/hospital",domain.Hospital{}.ServeData).Methods(http.MethodGet)
 
 
-	router.HandleFunc("/college",func( w http.ResponseWriter, r *http.Request){
-		//Allow CORS here By * or specific origin
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-
-		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-		fmt.Fprintln(w,logic.GetCollege())
-	})
-
-	router.HandleFunc("/home",func(w http.ResponseWriter, r *http.Request){
-		//Allow CORS here By * or specific origin
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-
-		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-		fmt.Fprintln(w,logic.GetHomeHospitals())
-	})
-
-    router.HandleFunc("/hospital",func (w http.ResponseWriter, r *http.Request){
-    	//Allow CORS here By * or specific origin
-    	w.Header().Set("Access-Control-Allow-Origin", "*")
-
-    	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-        fmt.Fprintln(w,logic.GetBigHospitalData())
-    })
-
-
-	 server := &http.Server{Handler:router,Addr:":8000"} // Change port to environment variable
+	///////////////////////////////////// BAD DESIGN
+	 var address string
+	 port := os.Getenv("PORT")					// ENV PORT
+	 // IF NO PORT SPECIFIED, THEN DEFAULT IS 8000
+	 if port == ""{
+	 	address = ":8000"
+	 } else {
+	 	address = fmt.Sprintf(":%d",port)
+	 }
+	 ///////////////////////////////////// BAD DESIGN
+	 server := &http.Server{Handler:router,Addr:address}
 	 log.Fatalln(server.ListenAndServe())
 
 }

@@ -1,5 +1,10 @@
 package domain
 
+import (
+	"fmt"
+	"io/ioutil"
+	"net/http"
+)
 
 /*
 name
@@ -22,4 +27,22 @@ type Hospital struct {
 	EndLat float64 `json:"end_lat" bson:"end_lat"`
 
 }
+
+func (h Hospital) GetData() string {
+	file, err := ioutil.ReadFile("./data/BigHospitalSORT.json")
+	if err != nil {
+		return ""
+	}
+	rest := string([]byte(file))
+	return rest
+}
+
+func (h Hospital) ServeData(w http.ResponseWriter, r *http.Request){
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
+	fmt.Fprintln(w,Hospital{}.GetData())
+}
+
 
