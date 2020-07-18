@@ -31,7 +31,7 @@ type Home struct {
 }
 
 func (h Home) GetData() string {
-	file, err := ioutil.ReadFile("./data/HospitalSORT.json")
+	file, err := ioutil.ReadFile("./data/SortedElPaso.json")
 	if err != nil {
 		return ""
 	}

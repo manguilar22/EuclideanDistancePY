@@ -28,17 +28,17 @@ api = Api(app)
 api.add_resource(Rest,"/rest",endpoint="rest")
 api.add_resource(Home,"/home",endpoint="home")
 api.add_resource(Locations,"/locations",endpoint="locations")
-api.add_resource(College,"/college",endpoint="college")
-api.add_resource(Hospital,"/hospital",endpoint="hospital")
+api.add_resource(College,"/colleges",endpoint="colleges")
+api.add_resource(Hospital,"/hospitals",endpoint="hospitals")
 
 # Private Routes (Mongodb - Registry)
-api.add_resource(Database,"/admin",endpoint="admin")
+api.add_resource(Database,"/admins",endpoint="admins")
 api.add_resource(ShowCollections,"/admin/",endpoint="collections")  #/admin/<collection_name>?name=<query>
 
 # Private Routes (Mongodb - Manipulation)
-api.add_resource(CollegeQ,"/mongodb/college",endpoint="College Collection Queries")
-api.add_resource(HomeQ,"/mongodb/home",endpoint="Home Collection Queries")
-api.add_resource(HospitalQ,"/mongodb/hospital",endpoint="Hospital Collection Queries")
+api.add_resource(CollegeQ,"/mongodb/colleges",endpoint="College Collection Queries")
+api.add_resource(HomeQ,"/mongodb/homes",endpoint="Home Collection Queries")
+api.add_resource(HospitalQ,"/mongodb/hospitals",endpoint="Hospital Collection Queries")
 
 @app.route("/")
 def hello():

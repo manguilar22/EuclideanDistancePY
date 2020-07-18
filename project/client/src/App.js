@@ -1,23 +1,16 @@
-import React,{Component} from 'react';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter} from "react-router-dom";
-import Nav from "./components/nav/Nav";
-import Routes from "./components/nav/Routes";
 
+import Home from "./components/Home";
+import HomeLines from "./components/HomeLines";
 
-import "./css/map.css";
-
-class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <Nav/>
-                <hr/>
-                <Routes/>
-            </BrowserRouter>
-        );
-
-    }
+function App() {
+  return (
+    <div className="App">
+      <HomeLines/>
+    </div>
+  );
 }
 
 export default App;
