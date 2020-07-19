@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1e4b560b-8f07-4fdf-90e7-6b5317936783" name="k8s-master-0@vsphere">
+        <fileTransfer rootFolder="/home/user" accessType="SFTP" host="192.168.1.121" port="22" sshConfigId="bdb848ac-6102-4fc1-a909-7730849d3509" sshConfig="user@192.168.1.121:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

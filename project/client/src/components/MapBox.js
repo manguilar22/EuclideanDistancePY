@@ -3,9 +3,9 @@ import Plot from "react-plotly.js";
 
 export default class MapBox extends Component {
     layout = () => {
-        const {title} = this.props;
+
         let layout = {
-            title: title,
+            title: this.props.title,
             autosize: true,
             hovermode:'closest',
             mapbox: {
@@ -36,13 +36,13 @@ export default class MapBox extends Component {
     };
 
     render() {
-        const {data} = this.props;
 
         const token = "pk.eyJ1IjoibWFuZ3VpbGFyMjIiLCJhIjoiY2p3MHZjbmh6MDBpYTRibzVldDdiZ2gyMSJ9.ZpELh1Ia4QEkZWExq9tI5Q";
         const config = {
             mapboxAccessToken: token
         };
-        return ( <Plot data={data} layout={this.layout()} config={config}/>);
+
+        return ( <Plot data={this.props.data} layout={this.layout()} config={config}/>);
     }
 
 }

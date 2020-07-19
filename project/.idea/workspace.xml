@@ -20,10 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d3686a4-808d-4d7b-be92-8cee6a644ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/hoc/Projection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/react-dashboard.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/rest-api.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/rest/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/controller/Handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest/controller/Handle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomeLines.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Hospital.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MapBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MapBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/copy_c/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +68,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -78,7 +95,8 @@
       <workItem from="1595039114112" duration="1788000" />
       <workItem from="1595074828069" duration="3622000" />
       <workItem from="1595082249154" duration="4546000" />
-      <workItem from="1595130784959" duration="966000" />
+      <workItem from="1595130784959" duration="3075000" />
+      <workItem from="1595164438580" duration="6417000" />
     </task>
     <servers />
   </component>
@@ -98,6 +116,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="295" y="44" width="832" height="704" key="#SSH_Configurations" timestamp="1595132635584">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="295" y="44" width="832" height="704" key="#SSH_Configurations/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595132635584" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595179107597">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595179107597" />
     <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1595085107923">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -114,9 +140,17 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595085107923" />
-    <state x="205" y="31" key="SettingsEditor" timestamp="1595039418841">
+    <state x="205" y="31" key="SettingsEditor" timestamp="1595164700676">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="205" y="31" key="SettingsEditor/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595039418841" />
+    <state x="205" y="31" key="SettingsEditor/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595164700676" />
+    <state x="617" y="109" key="ftp.server.browser" timestamp="1595132672900">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="617" y="109" key="ftp.server.browser/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595132672900" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595132541284">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1595132541284" />
   </component>
 </project>
