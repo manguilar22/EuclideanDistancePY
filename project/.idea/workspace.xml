@@ -20,50 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d3686a4-808d-4d7b-be92-8cee6a644ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HomeLines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/MapBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/model/College.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/model/Welcome.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/model/bootstrap/LinkAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/nav/Nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/nav/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/BigHospital.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/ElPaso.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/ElPasoLines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/hoc/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/hoc/MapBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/hoc/Maps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/plotly/hoc/Projection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/map.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/serviceWorker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/rest/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/domain/Home.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest/domain/Home.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/public/home.gohtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/public/hospital.gohtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/public/index.gohtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/controller/Handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest/controller/Handle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +77,8 @@
       <workItem from="1595018464655" duration="2577000" />
       <workItem from="1595039114112" duration="1788000" />
       <workItem from="1595074828069" duration="3622000" />
-      <workItem from="1595082249154" duration="4068000" />
+      <workItem from="1595082249154" duration="4546000" />
+      <workItem from="1595130784959" duration="966000" />
     </task>
     <servers />
   </component>

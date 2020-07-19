@@ -26,6 +26,7 @@ WORKDIR /dist
 # Copy binary from build to main folder
 RUN cp /build/main .
 RUN cp -r /build/data .
+RUN cp -r /build/public .
 
 # Export necessary port
 EXPOSE 8000

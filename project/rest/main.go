@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gorilla/mux"
+	"github.com/manguilar22/EuclideanDistancePY/project/rest/controller"
 	"github.com/manguilar22/EuclideanDistancePY/project/rest/domain"
 	"log"
 	"net/http"
@@ -13,7 +14,7 @@ func main () {
 	router := mux.NewRouter()
 
 	// WEB
-	//router.HandleFunc("/public",controller.CollegePageTest)
+	router.HandleFunc("/public",controller.CollegePageTest)
 
 	router.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		fmt.Fprintln(writer,"Works")

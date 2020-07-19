@@ -40,5 +40,7 @@ func CollegeTestHandler(w http.ResponseWriter, r *http.Request){
 }
 
 func CollegePageTest(w http.ResponseWriter, r *http.Request){
-	tpl.Execute(w,"GZJdkjd")
+	data := domain.College{}
+	w.WriteHeader(http.StatusOK)
+	tpl.Execute(w,data.GetData())
 }
