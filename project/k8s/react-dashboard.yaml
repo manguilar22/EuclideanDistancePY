@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: react-geo
@@ -16,8 +16,7 @@ spec:
         app: react
     spec:
       containers:
-        - image: maguilar22/react:geo
+        - image: manguilar22/react:geo
           name: react-plotly-geo
           ports:
-            - 3000:3000
-
+            - containerPort: 3000

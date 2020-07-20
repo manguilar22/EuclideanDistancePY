@@ -42,6 +42,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./client/
+    depends_on:
+      - go-rest
     ports:
       - 3000:3000
 

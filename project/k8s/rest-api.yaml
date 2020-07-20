@@ -30,9 +30,10 @@ metadata:
   labels:
     app: go-rest-api
 spec:
+  selector:
+    matchLabels: go-rest-api
   type: ClusterIP
-  protocol: TCP
-  clusterIP: none
+  clusterIP: None
   ports:
-    - port: 8000
-      targetPort: 8000
+    - protocol: TCP
+      port: 8000
