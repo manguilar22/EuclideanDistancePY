@@ -1,0 +1,28 @@
+name: CD-docker
+
+on:
+  push:
+    branches: [ master ]
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+    - name: Build Go REST api
+      run: |
+        cd project/rest/       
+        docker login --username=manguilar22 --password=${{ secrets.DOCKER_PW }}
+        docker image build -t manguilar22/golang:rest -f Dockerfile .
+        docker push manguilar22/golang:rest
+
+    - uses: actions/checkout@v2
+    - name: Build React client
+      run: |
+        cd project/client
+        docker login --username=manguilar22 --password=${{ secrets.DOCKER_PW }}
+        docker image build -t manguilar22/react:geo -f Dockerfile .
+        docker push manguilar22/react:geo

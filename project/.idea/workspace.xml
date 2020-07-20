@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d3686a4-808d-4d7b-be92-8cee6a644ff7" name="Default Changelist" comment="" />
+    <list default="true" id="9d3686a4-808d-4d7b-be92-8cee6a644ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/k8s/proxy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/react-dashboard.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/react-dashboard.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +84,8 @@
       <workItem from="1595074828069" duration="3622000" />
       <workItem from="1595082249154" duration="4546000" />
       <workItem from="1595130784959" duration="3075000" />
-      <workItem from="1595164438580" duration="11964000" />
+      <workItem from="1595164438580" duration="13656000" />
+      <workItem from="1595227736708" duration="314000" />
     </task>
     <servers />
   </component>
