@@ -1,7 +1,8 @@
 import React,{Component} from "react";
-import axios from "axios";
 import Home from "./Home";
 import MapBox from "./MapBox";
+import {routes} from "../config/routes";
+
 class HomePage extends Component {
 
     state = {
@@ -9,7 +10,7 @@ class HomePage extends Component {
     };
 
     componentDidMount() {
-        axios.get("http://" + process.env.REACT_APP_HOSTNAME  + "/home").then(async (req) => {
+        routes.home.then(async (req) => {
             const d = await req.data;
             this.setState({locations:d});
         });

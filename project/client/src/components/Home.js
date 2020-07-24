@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import axios from "axios";
 
 import MapBox from "./MapBox";
 import Projection from "./hoc/Projection";
+
+import {routes} from "../config/routes";
 
 class Home extends Component {
 
@@ -12,7 +13,7 @@ class Home extends Component {
 
     componentDidMount() {
 
-        axios.get("http://" + process.env.REACT_APP_HOSTNAME + "/home").then( async (req) => {
+        routes.home.then( async (req) => {
             const d = await req.data;
             console.log(d);
             this.setState({locations: d});
