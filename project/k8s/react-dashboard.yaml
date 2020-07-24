@@ -18,6 +18,9 @@ spec:
       containers:
         - image: manguilar22/react:geo
           name: react-plotly-geo
+          env:
+            - name: REACT_APP_HOSTNAME
+              value: go-rest-api-svc:8000
           resources:
             requests:
               memory: 2Gi

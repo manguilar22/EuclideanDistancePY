@@ -12,7 +12,7 @@ class Home extends Component {
 
     componentDidMount() {
 
-        axios.get("/home").then( async (req) => {
+        axios.get("http://" + process.env.REACT_APP_HOSTNAME + "/home").then( async (req) => {
             const d = await req.data;
             console.log(d);
             this.setState({locations: d});
