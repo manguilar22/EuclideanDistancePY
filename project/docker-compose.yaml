@@ -40,7 +40,7 @@ services:
     container_name: "react-app"
     restart: always
     environment:
-      REACT_APP_HOSTNAME: go-rest:8000
+      REACT_APP_HOSTNAME: go-rest
     build:
       dockerfile: Dockerfile
       context: ./client/
