@@ -24,7 +24,7 @@ func main () {
 	router.HandleFunc("/home",domain.Home{}.ServeData).Methods(http.MethodGet)
 	router.HandleFunc("/hospitals",domain.Hospital{}.ServeData).Methods(http.MethodGet)
 
-     var address string = ":8000"
+     var address string = "0.0.0.0:8000"
 	 server := &http.Server{Handler:router,Addr:address}
 	 log.Fatalln(server.ListenAndServe())
 

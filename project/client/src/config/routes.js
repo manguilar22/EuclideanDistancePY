@@ -1,12 +1,14 @@
 import axios from "axios";
 
-const url = process.env.REACT_APP_HOSTNAME || "127.0.0.1:8000";
+const url = `http://${process.env.REACT_APP_HOSTNAME}` || "http://127.0.0.1:8000";
 
 const instance = axios.create({
-    baseURL: `http://${url}`
+    baseURL: url
 });
 
 export const routes = {
-	home: instance.get(`/home`),
-    hospitals: instance.get(`/hospitals`)
+	home: instance.get("/home"),
+    hospitals: instance.get("/hospitals")
 }
+
+
