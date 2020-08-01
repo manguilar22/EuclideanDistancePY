@@ -8,7 +8,7 @@ metadata:
     app: go-rest-api
     tier: backend
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: go-rest-api
@@ -31,9 +31,10 @@ metadata:
     app: go-rest-api
 spec:
   selector:
-    matchLabels: go-rest-api
+    app: go-rest-api
   type: ClusterIP
-  clusterIP: None
+  #clusterIP: None
   ports:
     - protocol: TCP
       port: 8000
+      targetPort: 8000

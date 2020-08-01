@@ -20,7 +20,7 @@ spec:
           name: react-plotly-geo
           env:
             - name: REACT_APP_HOSTNAME
-              value: go-rest-api-svc
+              value: 10.99.252.117:8000
           ports:
             - containerPort: 3000
 ---
