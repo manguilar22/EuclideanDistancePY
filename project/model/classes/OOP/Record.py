@@ -15,24 +15,6 @@ class Record(object):
         e=str(salt+self.name).encode("UTF")
         return hashlib.sha512(e).hexdigest()
 
-    def display(self):
-        s = """
-                UUID: {id}
-                Name: {name}
-                Address: {address}
-                City: {city} 
-                Zip Code: {zipCode} 
-                Web: {web} 
-                Program Name: {pr_name}
-                """.format(id=self.UUID(),
-                           name=self.name,
-                           address=self.address,
-                           city=self.city,
-                           zipCode=self.zip_code,
-                           web=self.web,
-                           pr_name=self.program_name)
-        return s
-
     def __repr__(self):
         s="""
         UUID: {id}

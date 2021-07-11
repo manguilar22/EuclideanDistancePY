@@ -22,8 +22,8 @@ class Algorithms(object):
             for i in analysis:
                 res.append(euclidean(array(a[z]) - array(i)))
             minimum = res.index(min(res))
-            collection = [ analysis[minimum], a[z] ]
-            c.append(tuple(collection))
+            collection = ( analysis[minimum], a[z] )
+            c.append(collection)
             res.clear()
             z += 1
         # Time
