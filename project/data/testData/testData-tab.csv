@@ -1,0 +1,11 @@
+start_loc_lat,start_loc_lon,start_name,end_loc_lat,end_loc_lon,end_name
+34.8647994995,-86.7703018188,Epps Airpark,40.0708007812,-74.9336013794,Total Rf Heliport
+34.9428028,-97.8180194,Fulton Airport,38.704022,-101.473911,Aero B Ranch Airport
+39.427188,-121.763427,Williams Ag Airport,59.94919968,-151.695999146,Lowell Field
+35.6087,-91.254898,Newport Hospital & Clinic Heliport,34.8647994995,-86.7703018188,Epps Airpark
+34.8647994995,-86.7703018188,Epps Airpark,35.6087,-91.254898,Newport Hospital & Clinic Heliport
+38.704022,-101.473911,Aero B Ranch Airport,34.9428028,-97.8180194,Fulton Airport
+32.7273736,-116.4597417,Kitchen Creek Helibase Heliport,34.3055992126,-112.1650009155,Cordes Airport
+32.7273736,-116.4597417,Kitchen Creek Helibase Heliport,35.3504981995,-116.888000488,Goldstone /Gts/ Airport
+35.3504981995,-116.888000488,Goldstone /Gts/ Airport,39.427188,-121.763427,Williams Ag Airport
+35.3504981995,-116.888000488,Goldstone /Gts/ Airport,32.7273736,-116.4597417,Kitchen Creek Helibase Heliport

@@ -11,7 +11,6 @@ class Algorithms(object):
 
     def euclideanDistance(self, a):
         """Make a map of the shortest distance between points in a Set"""
-        start = dt.now()
         c = []
         res = []
         z = 0
@@ -26,11 +25,6 @@ class Algorithms(object):
             c.append(collection)
             res.clear()
             z += 1
-        # Time
-        end = dt.now() - start
-        f = time.gmtime(end.seconds)
-        s = "--- {}:{}:{} CPU Elapsed Time. ---\nSeconds:\t{} ".format(f.tm_hour, f.tm_min, f.tm_sec, end.total_seconds())
-        print(s)
         return c
 
     def find(self, target, arr):
