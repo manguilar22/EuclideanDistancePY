@@ -26,6 +26,7 @@ hospitalPaths
 
 #### Neo4j 
 
-... 
+**Schema Definition** 
 
+![neo4-schema-viz](https://raw.githubusercontent.com/manguilar22/EuclideanDistancePY/master/data/img/graph.svg)
 
