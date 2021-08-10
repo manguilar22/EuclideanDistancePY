@@ -26,7 +26,17 @@ hospitalPaths
 
 #### Neo4j 
 
+
 **Schema Definition** 
 
 ![neo4-schema-viz](https://raw.githubusercontent.com/manguilar22/EuclideanDistancePY/master/data/img/graph.png)
 
+
+**Hospitals** 
+
+![neo4j-hospitals](https://raw.githubusercontent.com/manguilar22/EuclideanDistancePY/master/data/img/hospitals.svg)
+
+
+**Colleges**  
+
+![neo4j-colleges](https://raw.githubusercontent.com/manguilar22/EuclideanDistancePY/master/data/img/colleges.svg) 
