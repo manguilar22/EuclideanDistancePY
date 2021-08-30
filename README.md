@@ -11,7 +11,7 @@
 ```
 admin   0.000GB
 config  0.000GB
-local   0.001GB
+local   0.006GB
 ```
 
 **>** show collections 
@@ -21,8 +21,6 @@ college
 hospital
 hospitalPaths
 ```
-
-
 
 #### Neo4j 
 

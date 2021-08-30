@@ -153,4 +153,4 @@ dependencies:
     - requests==2.25.1
     - urllib3==1.26.6
     - websocket-client==1.1.0
-prefix: /home/user/Documents/anaconda3/envs/science
+prefix: /home/user/anaconda3/envs/science
