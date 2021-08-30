@@ -27,14 +27,16 @@ def shortestPath(registry, records):
             end_name = end["name"] 
             end_lat = end["lat"] 
             end_lon = end["lon"] 
-            
+            end_distance = res[minimum]
+                        
             result = dict(
                 start_name=start_name,
                 start_lat=start_loc[0], 
                 start_lon=start_loc[1],
                 end_name=end_name,
                 end_lat=end_lat,
-                end_lon=end_lon
+                end_lon=end_lon,
+                distance=end_distance
             )
             c.append(result)
             res.clear()

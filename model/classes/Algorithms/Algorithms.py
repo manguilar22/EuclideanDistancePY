@@ -26,12 +26,13 @@ class Algorithms(object):
                 end_loc = (i["lat"], i["lon"])
                 distance = euclidean(array(start_loc) - array(end_loc))
                 res.append(distance)
-                                
+                                        
             minimum = res.index(min(res)) 
             end = analysis[minimum]
             end_name = end["name"] 
             end_lat = end["lat"] 
             end_lon = end["lon"] 
+          
             
             result = dict(
                 start_name=start_name,
